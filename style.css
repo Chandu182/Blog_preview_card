@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(47, 88%, 63%);
+}
+.container{
+    margin: 5rem auto;
+    margin-bottom: 1em;
+    width: 30%;
+    height: fit-content;
+    padding: auto;
+}
+.card{
+    margin: 2em auto;
+    width: 100%;
+    height: 100%;
+    border-radius:0.7em;
+    border: 0.1em solid hsl(0, 0%, 50%);
+    box-shadow: 0.6em 0.6em 0em hsl(0, 0%, 7%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.2em;
+}
+.article{
+    width: 100%;
+    border-radius: 0.6em;
+    margin-bottom: 1em;
+}
+span{
+    padding: 0.4em 0.9em;
+    border-radius: 0.3em;
+    font-size:0.9rem;
+    text-wrap: wrap;
+    font-weight: 800;
+    background-color: hsl(47, 88%, 63%);
+}
+.publishingdate{
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 1em 0.3em 0.4em 0em;
+    padding-top: 0.5em;
+}
+h1{
+    font-size: 1.5rem;
+    padding-top: 0.4em;
+    padding-bottom: 0.6em;
+}
+h1:hover{
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+p{
+    font-size: 1rem;
+}
+.description{
+    color: hsl(47, 0%, 50%);
+    line-height: 1.3em;
+}
+.author_name{
+    margin-top: 1.5em;
+    margin-bottom:.3em;
+    margin-left: 2em;
+    font-weight: 800;
+}
+.avatar{
+    width: 2em;
+    margin-top:1em;
+    margin-right:1em;
+    float: left;
+}
+@media (min-width:576px) and (max-width:768px){
+    .container{
+        width:60%;
+        margin: 1em auto;
+        margin-bottom:0;
+        padding: 0.3em;
+    }
+    .card{
+        width: 90%;
+        box-shadow: 0.4em 0.4em 0em hsl(0, 0%, 7%);
+    }
+    h1{
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+    span{
+        font-size: 0.8rem;
+    }
+    .description{
+        font-size: 0.9rem;
+    }
+    .publishingdate{
+        font-size: 0.9rem;
+    }
+    .author_name{
+        font-size: 0.9rem;
+    }
+}
+@media (min-width:367px) and (max-width:575px){
+    .container{
+        width:100%;
+        margin: 1em auto;
+        margin-bottom:0;
+        padding: 1em;
+    }
+    .card{
+        width: 90%;
+        box-shadow: 0.4em 0.4em 0em hsl(0, 0%, 7%);
+    }
+    h1{
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+    span{
+        font-size: 0.8rem;
+    }
+    .description{
+        font-size: 0.9rem;
+    }
+    .publishingdate{
+        font-size: 0.9rem;
+    }
+    .author_name{
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:366px){
+    .container{
+        width: 100%;
+    }
+    .card{
+        width: 90%;
+        padding: 0.6em;
+        box-shadow: 0.4em 0.4em 0em hsl(0, 0%, 7%);
+    }
+    h1{
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+    .description{
+        font-size: 0.8rem;
+    }
+    span{
+        font-size: 0.8rem;
+    }
+    .publishingdate{
+        font-size: 0.8rem;
+    }
+    .author_name{
+        font-size: 0.8rem;
+    }
+}
